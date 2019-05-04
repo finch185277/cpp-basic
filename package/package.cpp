@@ -11,14 +11,9 @@ int main() {
   case_ss << case_str;
   case_ss >> case_num;
   while (case_num--) {
-    std::string pack_str;
-    std::stringstream pack_ss;
     std::vector<int> packages;
-    int p;
-    std::getline(std::cin, pack_str);
-    pack_ss << pack_str;
-    while (pack_ss >> p)
-      packages.push_back(p);
+    for (std::string pack_str; std::getline(std::cin, pack_str, ' ');)
+      packages.push_back(std::stoi(pack_str));
     int sum = 0;
     bool skip = false;
     for (int &p : packages)
