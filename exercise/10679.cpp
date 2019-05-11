@@ -20,7 +20,7 @@ std::vector<unsigned int> make_prime_num(unsigned int n) {
 }
 
 int main() {
-  std::vector<unsigned int> prime_num(make_prime_num(100000000));
+  std::vector<unsigned int> prime_num(make_prime_num(10000000));
   for (unsigned int n; std::cin >> n && n != 0;) {
     unsigned int ret = n;
     std::vector<int> factor;
