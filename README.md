@@ -1,2 +1,2 @@
 # cpp-basic
-Basic review of C++
+Basic review of C++ (for GPE)
